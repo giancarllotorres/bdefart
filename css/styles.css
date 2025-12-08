@@ -416,6 +416,75 @@ p {
     color: var(--text-color);
 }
 
+/* ========== Frameworks / Toolset ========== */
+.frameworks-section {
+    margin-top: 24px;
+}
+
+.frameworks-section h3 {
+    margin: 12px 0;
+    font-size: 1.125rem;
+    color: var(--text-color);
+}
+
+.framework-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.framework-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    background: transparent;
+    border: 1px solid rgba(212,205,217,0.4);
+    border-radius: 10px;
+}
+
+.framework-logo {
+    width: 28px;
+    height: 28px;
+    display: block;
+    object-fit: contain;
+}
+
+.framework-logo.bw {
+    filter: grayscale(1) brightness(0) contrast(100%);
+    /* ensure svg scales nicely */
+    width: 28px;
+    height: 28px;
+}
+
+.framework-logo.placeholder {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border-radius: 6px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.framework-label {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+@media (max-width: 480px) {
+    .framework-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+    .framework-item {
+        padding: 8px 10px;
+        gap: 8px;
+    }
+}
+
 
 
 /* ========== Contact Section ========== */
@@ -448,17 +517,19 @@ p {
 .contact-button {
     display: inline-block;
     padding: 14px 32px;
-    background: transparent !important;
-    color: var(--text-color) !important;
+    background: #191919 !important;
+    color: #ffffff !important;
     text-decoration: none;
-    border: 1px solid var(--border-color);
+    border: none;
     border-radius: 50px;
     font-size: 1rem;
-    transition: background 0.2s ease;
+    transition: background 0.15s ease, transform 0.12s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
 .contact-button:hover {
-    background: var(--hover-bg);
+    background: #0f0f0f !important;
+    transform: translateY(-1px);
 }
 
 .social-links {
@@ -803,7 +874,15 @@ p {
 /* ========== Clients Section ========== */
 .clients-section {
     margin-bottom: 40px;
-    text-align: center;
+    text-align: left;
+}
+
+.clients-section h3 {
+    display: block;
+    color: var(--text-color);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 12px;
 }
 
 .clients-image {
@@ -811,7 +890,7 @@ p {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0; /* left-align image inside container */
 }
 
 /* Match the work grid width constraints */
