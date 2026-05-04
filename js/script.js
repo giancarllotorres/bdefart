@@ -233,6 +233,24 @@ if (modal && modalClose && modalWorkItems.length > 0) {
         const createMediaElement = (src, altText) => {
             console.log('Creating media element for:', src);
             
+            // Check if it's an external website URL (like Framer project)
+            if (src.match(/^https?:\/\//) && !src.includes('youtube') && !src.includes('youtu.be') && 
+                !src.toLowerCase().match(/\.(jpg|jpeg|png|gif|webp|mp4|webm|mov)$/)) {
+                console.log('Detected external website URL');
+                const linkDiv = document.createElement('div');
+                linkDiv.className = 'modal-external-link';
+                linkDiv.style.cssText = 'padding: 30px; background: #f5f5f5; border-radius: 8px; text-align: center; margin: 20px 0;';
+                linkDiv.innerHTML = `
+                    <h3 style="margin-bottom: 15px; color: #191919;">View Full Project Case Study</h3>
+                    <a href="${src}" target="_blank" rel="noopener noreferrer" 
+                       style="display: inline-block; padding: 12px 30px; background: #191919; color: white; 
+                              text-decoration: none; border-radius: 50px; font-weight: 500; transition: opacity 0.2s;">
+                        Open Project →
+                    </a>
+                `;
+                return linkDiv;
+            }
+            
             // Check if it's a YouTube embed URL
             const embedMatch = src.match(/youtube\.com\/embed\/([^?]+)/);
             if (embedMatch) {
