@@ -2,75 +2,79 @@
 
 This folder contains images for the Etsy App Redesign project.
 
-## Required Images (in order of appearance):
+## Required Images (Upload in sequence):
 
-### Row 1: Cover Image
-1. **etsy_cover.webp** - Hero/cover image
-   - Recommended size: 1200x900px
-   - Should showcase the main redesign concept
+Based on the Framer website screenshots, you need to upload **9 images** in this exact order:
 
-### Row 2: Context
-2. **etsy_home.webp** - Etsy home page screenshots
-   - Shows the current Etsy app interface
+### 1. **01_cover.webp** 
+   - **Content**: Hero image with pink "Etsy App" label + intro text + phone mockup with Etsy app
+   - **From screenshot**: First page showing the title, goal, role, and context
+   - Shows someone holding a phone with Etsy home screen
 
-### Row 3: Current Search
-3. **etsy_search.webp** - Current search page
-   - Shows existing Etsy search experience
+### 2. **02_context_phone.webp**
+   - **Content**: Etsy home page screenshot on phone mockup
+   - **From screenshot**: Right side of "1st pain point: the chat" section
+   - Shows the current Etsy app home interface with search and product grid
 
-### Row 4: Chat Problem Analysis (2 images side by side)
-4. **etsy_chat_wireframe.webp** - Chat wireframes
-   - Wireframes showing chat navigation flow
-5. **etsy_chat_analysis.webp** - Competitive analysis
-   - Comparison with Wallapop and Vinted chat features
+### 3. **03_chat_home.webp**
+   - **Content**: 3 wireframe phone mockups side by side
+   - **From screenshot**: "Solutions & Wireframing" section under chat problem
+   - Shows: Home page → Chat page → Individual conversation
+   - Labeled: "home page", "chat page"
 
-### Row 5: Chat Solution
-6. **etsy_chat_solution.webp** - Chat solution design
-   - Shows the new chat interface and navigation
+### 4. **04_chat_wireframes.webp**
+   - **Content**: Could be chat analysis or additional wireframes
+   - **Alternative**: You may combine this with #3 or use competitive analysis images
+   - Shows the user flow and navigation structure
 
-### Row 6: Filter Problem
-7. **etsy_filter_problem.webp** - Filter pain points
-   - Screenshots showing current filtering issues
+### 5. **05_filter_search.webp**
+   - **Content**: Etsy search page screenshot on phone mockup  
+   - **From screenshot**: Right side of "2nd pain point: the filtering gap" section
+   - Shows Home & Living categories grid
 
-### Row 7: Filter Wireframes
-8. **etsy_filter_wireframe.webp** - Filter wireframes
-   - Wireframes of the bottom sheet overlay design
+### 6. **06_filter_wireframes.webp**
+   - **Content**: 3 wireframe phone mockups showing filter flow
+   - **From screenshot**: "Strategic Implementation & Wireframing" section
+   - Shows: Search page → Filters button → Bottom sheet overlay
+   - Labeled: "search page", "Filters" button highlighted
 
-### Row 8: Filter Solution
-9. **etsy_filter_solution.webp** - Filter implementation
-   - Shows the new filtering system in action
+### 7. **07_final_phone.webp**
+   - **Content**: Single phone mockup on orange gradient background
+   - **From screenshot**: "Final Solution: High-Fidelity Design" section
+   - High-fidelity design showcasing the final interface
 
-### Row 9: Final Chat Design
-10. **etsy_final_chat.webp** - High-fidelity chat design
-    - Final polished chat interface mockups
+### 8. **08_final_chat_screens.webp**
+   - **Content**: 3 high-fidelity phone mockups of chat feature
+   - **From screenshot**: "the chat:" section
+   - Shows: Home → Messages list → Individual conversation
+   - Full-color, polished design with Etsy branding
 
-### Row 10: Final Filter Design
-11. **etsy_final_filter.webp** - High-fidelity filter design
-    - Final polished filter interface mockups
+### 9. **09_prototype_filter.webp**
+   - **Content**: Phone mockup showing filter overlay in action
+   - **From screenshot**: "The Prototype:" section showing "the video"
+   - Shows the bottom sheet filter with Category, Location, Price, Shipping options, Sort by
 
-## Image Guidelines:
+## Quick Upload Guide:
 
-- **Format**: WebP for best performance (or JPG/PNG)
-- **Aspect Ratio**: Maintain consistency (16:9 or 4:3 recommended)
-- **Resolution**: High enough for detail but optimized for web
+1. **Extract screenshots from your Framer project**
+2. **Name them exactly as listed above** (01_cover.webp through 09_prototype_filter.webp)
+3. **Save as WebP format** (or PNG/JPG - the site will work with any)
+4. **Place all files in this folder**: `images/uxui/etsy/`
+
+## Image Specifications:
+
+- **Format**: WebP preferred (PNG/JPG also work)
+- **Resolution**: High enough for detail but web-optimized
 - **File Size**: Aim for under 500KB per image
-- **Content**: Ensure all text is readable and UI elements are clear
-
-## Creating the Images:
-
-You can extract these from your Framer project or recreate them:
-1. Export from Figma/design tool as WebP
-2. Use screenshots from your prototype
-3. Create mockups showing before/after comparisons
-4. Include annotations/callouts where helpful
+- **Aspect Ratio**: Consistent throughout (screenshots can be cropped to match)
 
 ## Notes:
 
-- Images will be displayed in a modal gallery
-- Multiple images in a row will be shown side by side
-- All images have a fallback to a placeholder if not yet added
-- The site will function without images, but they greatly enhance the case study
+- The site has fallback images, so it works even without these files
+- Images display in a single column gallery in the modal
+- Each row from the Framer layout becomes one image
+- All text content is already in the HTML - images are visual supplements
 
-## Original Case Study:
+## Original Source:
 
-Full interactive version available at:
-https://beatrizbarbosa.framer.website/project1
+Screenshots from: https://beatrizbarbosa.framer.website/project1
